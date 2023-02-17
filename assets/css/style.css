@@ -60,6 +60,10 @@ Common Styles
   cursor: pointer;
 }
 
+.my-btn:hover{
+  background-color: #fb5d94;
+}
+
 .p-tb {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -655,6 +659,7 @@ footer .parent-container .contact-links .link {
 footer .bottom-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer .bottom-container .logo {
@@ -675,6 +680,13 @@ footer .bottom-container .text {
 
   footer .parent-container .same-space {
     width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  footer .bottom-container {
+    flex-direction: column;
+    align-items: start;
   }
 }
 
