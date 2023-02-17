@@ -207,7 +207,37 @@ header .navigation .navbar .buttons-container .button a:hover {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1000px) {
+header .navigation .navbar .buttons-container .dropdown__container{
+  position: relative;
+}
+
+header .navigation .navbar .buttons-container .dropdown__container .icon{
+  color: rgb(210, 209, 209);
+}
+
+header .navigation .navbar .buttons-container .dropdown{
+  list-style: none;
+  margin-top: 14px;
+  display: none;
+  position: absolute;
+  background-color: #ceccccce;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+header .navigation .navbar .buttons-container .dropdown__item{
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header .navigation .navbar .buttons-container .dropdown__item:hover{
+  background-color: #ccc;
+  border-radius: 5px;
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 1050px) {
   header .container {
     padding-top: 23px;
     padding-bottom: 23px;

@@ -69,6 +69,24 @@
               <div class="signup button">
                 <a href="#">signup</a>
               </div>
+              <div
+            href="#"
+            class="navbar__link dropdown__container"
+            id="dropdown__container"
+          >
+          🇮🇳
+            <span class="icon" id="icon">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+            <ul class="dropdown" id="dropdown">
+              <li class="dropdown__item">🇫🇷</li>
+              <li class="dropdown__item">🇬🇧</li>
+              <li class="dropdown__item">🇬🇪</li>
+              <li class="dropdown__item">🇬🇫</li>
+              <li class="dropdown__item">🇬🇵</li>
+              <li class="dropdown__item">🇬🇲</li>
+            </ul>
+          </div>
             </div>
           </nav>
         </div>
@@ -292,6 +310,29 @@
         } else {
           console.log("I'm in else");
           navbar.style.backgroundColor = "transparent";
+        }
+      });
+    </script>
+    <script>
+      let dropdownContainer = document.getElementById("dropdown__container");
+      let iconContainer = document.getElementById("icon");
+      dropdownContainer.addEventListener("click", () => {
+        console.log(dropdown.style.display);
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          // console.log("hello")
+          dropdown.style.display = "block";
+          iconContainer.innerHTML = `
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                `;
+        } else {
+          console.log("bye");
+          dropdown.style.display = "none";
+          iconContainer.innerHTML = `
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                `;
         }
       });
     </script>
