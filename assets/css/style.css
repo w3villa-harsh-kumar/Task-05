@@ -57,6 +57,7 @@ Common Styles
   border-radius: 30px;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .p-tb {
@@ -194,7 +195,7 @@ header .navigation .navbar .buttons-container .button {
   font-size: 16px;
 }
 
-header .navigation .navbar .buttons-container .button:hover{
+header .navigation .navbar .buttons-container .button a:hover{
   border-bottom: 3px solid #ff699d;
 }
 
@@ -571,6 +572,7 @@ footer .bottom-container .logo {
   font-size: 30px;
   font-weight: bold;
   color: var(--primary-icon-color);
+  cursor: pointer;
 }
 
 footer .bottom-container .text {
