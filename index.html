@@ -94,6 +94,7 @@
     </header>
     <!-- Header Code End -->
 
+    <!-- Sidebar Code start -->
     <section class="sidebar">
       <div class="parent-container" id="sidebar">
         <div class="close-button" id="close-button">
@@ -114,7 +115,7 @@
             </li>
             <li class="nav__link">
               <a href="#"
-                ><i class="fa-regular fa-address-card"></i> contact Us</a
+              ><i class="fa-regular fa-address-card"></i> contact Us</a
               >
             </li>
           </ul>
@@ -127,7 +128,8 @@
         </div>
       </div>
     </section>
-
+    <!-- Sidebar Code End -->
+    
     <!-- Hero Section Code Start -->
     <section class="hero">
       <div class="container">
@@ -333,9 +335,8 @@
           navbar.style.backgroundColor = "#2c2c2c";
           navbar.style.transition = "all .5s";
           navbar.style.color = "white";
-          console.log("I'm in if");
+          
         } else {
-          console.log("I'm in else");
           navbar.style.backgroundColor = "transparent";
         }
       });
@@ -372,7 +373,6 @@
       });
 
       closeBtn.addEventListener("click", () => {
-        console.log("hello");
         sidebar.classList.toggle("slide");
       });
     </script>
