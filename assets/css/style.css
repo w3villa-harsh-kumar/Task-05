@@ -40,10 +40,6 @@ Common Styles
   font-family: "Lato", sans-serif;
 }
 
-body{
-  position: relative;
-}
-
 .container {
   max-width: 80vw !important;
   margin: auto;
@@ -351,7 +347,7 @@ Hero Section
 .sidebar .parent-container {
   position: fixed;
   width: 70%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
