@@ -468,6 +468,7 @@ Ribbon Section
 
   .ribbon .parent-continer .text {
     padding-bottom: 20px;
+    text-align: center;
   }
 }
 
@@ -482,6 +483,15 @@ footer .parent-container {
   border-bottom: 1px solid #cccccc88;
   padding-bottom: 70px;
   color: var(--secondary-text-color);
+}
+
+footer .parent-container .two {
+  display: flex;
+  width: 60%;
+}
+
+footer .parent-container .two .same-space {
+  width: 50%;
 }
 
 footer .parent-container .same-space {
@@ -538,6 +548,10 @@ footer .bottom-container .text {
 }
 
 @media screen and (max-width: 1000px) {
+  footer .parent-container .two {
+    width: 100%;
+  }
+
   footer .parent-container .same-space {
     width: 35%;
   }
