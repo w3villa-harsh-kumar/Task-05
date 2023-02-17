@@ -40,6 +40,10 @@ Common Styles
   font-family: "Lato", sans-serif;
 }
 
+body{
+  position: relative;
+}
+
 .container {
   max-width: 80vw !important;
   margin: auto;
@@ -86,6 +90,13 @@ Common Styles
 .active{
   display: block !important;
 }
+
+.slide{
+  transition: all .5s ease-in-out;
+  transform: translateX(0%) !important;
+}
+
+
 
 /* 
 **********************
@@ -325,6 +336,88 @@ Hero Section
     font-size: 30px;
   }
 }
+
+/* 
+**********************
+Hero Section
+**********************
+*/
+
+/* .sidebar{
+  width: 100vh;
+  background-color: rgba(0,0,0,.4);
+} */
+
+.sidebar .parent-container {
+  position: fixed;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: #3d3c3c;
+  z-index: 199;
+  transition: all .5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.sidebar .parent-container .close-button{
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+.sidebar .parent-container .list-container ul{
+  list-style: none;
+}
+
+.sidebar .parent-container .list-container ul li{
+  padding-top: 15px;
+}
+.sidebar .parent-container .list-container ul li a{
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+.sidebar .parent-container .list-container ul li a i{
+  color: white;
+  padding-right: 5px;
+}
+
+.sidebar .parent-container .logo{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.sidebar .parent-container .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f2f1f1;
+}
+
+.sidebar .parent-container .logo a .small {
+  color: var(--primary-text-color);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1050px){
+  .sidebar{
+    display: none;
+  }
+}
+
 
 /* 
 **********************

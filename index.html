@@ -70,29 +70,63 @@
                 <a href="#">signup</a>
               </div>
               <div
-            href="#"
-            class="navbar__link dropdown__container"
-            id="dropdown__container"
-          >
-          🇮🇳
-            <span class="icon" id="icon">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-            <ul class="dropdown" id="dropdown">
-              <li class="dropdown__item">🇫🇷</li>
-              <li class="dropdown__item">🇬🇧</li>
-              <li class="dropdown__item">🇬🇪</li>
-              <li class="dropdown__item">🇬🇫</li>
-              <li class="dropdown__item">🇬🇵</li>
-              <li class="dropdown__item">🇬🇲</li>
-            </ul>
-          </div>
+                href="#"
+                class="navbar__link dropdown__container"
+                id="dropdown__container"
+              >
+                🇮🇳
+                <span class="icon" id="icon">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown" id="dropdown">
+                  <li class="dropdown__item">🇫🇷</li>
+                  <li class="dropdown__item">🇬🇧</li>
+                  <li class="dropdown__item">🇬🇪</li>
+                  <li class="dropdown__item">🇬🇫</li>
+                  <li class="dropdown__item">🇬🇵</li>
+                  <li class="dropdown__item">🇬🇲</li>
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
     <!-- Header Code End -->
+
+    <section class="sidebar">
+      <div class="parent-container" id="sidebar">
+        <div class="close-button" id="close-button">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="list-container">
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="#"
+                ><i class="fa-regular fa-clipboard-list-check"></i> features</a
+              >
+            </li>
+            <li class="nav__link">
+              <a href="#"><i class="fa-regular fa-money-bill"></i> pricing</a>
+            </li>
+            <li class="nav__link">
+              <a href="#"><i class="fa-solid fa-user"></i></i> about</a>
+            </li>
+            <li class="nav__link">
+              <a href="#"
+                ><i class="fa-regular fa-address-card"></i> contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="#">
+            Achoo
+            <div class="small">beta</div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Hero Section Code Start -->
     <section class="hero">
@@ -143,16 +177,13 @@
         <div class="lower">
           <div class="people-card ps-tb">
             <div class="card-image">
-              <img
-                src="./assets/images/img.jpg"
-                alt="people-image"
-              />
+              <img src="./assets/images/img.jpg" alt="people-image" />
             </div>
             <div class="card-text ps-t">
               <div class="name">Harsh Kumar</div>
               <div class="bio">
-                CEO - Founder who makes easy to change and
-                makes easy to change and easy to create new elements.
+                CEO - Founder who makes easy to change and makes easy to change
+                and easy to create new elements.
               </div>
             </div>
             <div class="link ps-b">
@@ -161,16 +192,13 @@
           </div>
           <div class="people-card ps-tb">
             <div class="card-image">
-              <img
-                src="./assets/images/img.jpg"
-                alt="people-image"
-              />
+              <img src="./assets/images/img.jpg" alt="people-image" />
             </div>
             <div class="card-text ps-t">
               <div class="name">Harsh Kumar</div>
               <div class="bio">
-                CEO - Founder who makes easy to change and
-                makes easy to change and easy to create new elements.
+                CEO - Founder who makes easy to change and makes easy to change
+                and easy to create new elements.
               </div>
             </div>
             <div class="link ps-b">
@@ -179,16 +207,13 @@
           </div>
           <div class="people-card ps-tb">
             <div class="card-image">
-              <img
-                src="./assets/images/img.jpg"
-                alt="people-image"
-              />
+              <img src="./assets/images/img.jpg" alt="people-image" />
             </div>
             <div class="card-text ps-t">
               <div class="name">Harsh Kumar</div>
               <div class="bio">
-                CEO - Founder who makes easy to change and
-                makes easy to change and easy to create new elements.
+                CEO - Founder who makes easy to change and makes easy to change
+                and easy to create new elements.
               </div>
             </div>
             <div class="link ps-b">
@@ -205,8 +230,8 @@
       <div class="container">
         <div class="parent-continer">
           <div class="text">
-            CEO - Founder who makes easy to change and
-                makes easy to change and easy to create new elements.
+            CEO - Founder who makes easy to change and makes easy to change and
+            easy to create new elements.
           </div>
           <div class="my-btn">start your free trial</div>
         </div>
@@ -293,14 +318,16 @@
     <!-- Footer Section Code End  -->
 
     <script>
-      let hamburger = document.getElementById("hamburger");
-      let naviagation = document.getElementById("navigation");
-      let navbar = document.getElementById("header__section");
-      hamburger.addEventListener("click", () => {
-        console.log("click");
-        naviagation.classList.toggle("active");
-      });
+      // List
+      // let hamburger = document.getElementById("hamburger");
+      // let naviagation = document.getElementById("navigation");
+      // hamburger.addEventListener("click", () => {
+      //   console.log("click");
+      //   naviagation.classList.toggle("active");
+      // });
 
+      // Scroll Effect
+      let navbar = document.getElementById("header__section");
       window.addEventListener("scroll", () => {
         if (scrollY >= 200) {
           navbar.style.backgroundColor = "#2c2c2c";
@@ -312,8 +339,8 @@
           navbar.style.backgroundColor = "transparent";
         }
       });
-    </script>
-    <script>
+
+      // Dropdown
       let dropdownContainer = document.getElementById("dropdown__container");
       let iconContainer = document.getElementById("icon");
       dropdownContainer.addEventListener("click", () => {
@@ -334,6 +361,19 @@
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                 `;
         }
+      });
+
+      // Sidebar
+      let sidebar = document.getElementById("sidebar");
+      let closeBtn = document.getElementById("close-button");
+
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("slide");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        console.log("hello");
+        sidebar.classList.toggle("slide");
       });
     </script>
   </body>
