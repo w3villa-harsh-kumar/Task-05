@@ -320,7 +320,6 @@
     <!-- Footer Section Code End  -->
 
     <script>
-
       // Scroll Effect
       let navbar = document.getElementById("header__section");
       window.addEventListener("scroll", () => {
@@ -343,13 +342,11 @@
           dropdown.style.display === "none" ||
           dropdown.style.display === ""
         ) {
-          // console.log("hello")
           dropdown.style.display = "block";
           iconContainer.innerHTML = `
                 <i class="fa fa-angle-up" aria-hidden="true"></i>
                 `;
         } else {
-          console.log("bye");
           dropdown.style.display = "none";
           iconContainer.innerHTML = `
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
